@@ -1,0 +1,9 @@
+<div class="login">
+  <form action="http://localhost:3000/oauth2/authorize" type="GET">
+    <input type="hidden" name="response_type" value=<%= query.response_type %>>
+    <input type="hidden" name="client_id" value=<%= query.client_id %>>
+    <input type="hidden" name="redirect_uri" value=<%= query.redirect_uri %>>
+    <input type="hidden" name="state" value=<%= query.state %>>
+    <button type="submit">使用金牛邦登录</button>
+  </form>
+</div>

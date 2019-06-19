@@ -1,0 +1,35 @@
+<style>
+  form label {
+    display: block;
+    margin: 20px;
+  }
+  label input:not([type=checkbox]) {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 5px;
+  }
+  button {
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+  }
+</style>
+<div>
+  <form action="/oauth2/authorize" method="GET">
+    <label for="username">
+      <input type="text" name="username" placeholder="请输入用户名">
+    </label>
+    <label for="password">
+      <input type="password" name="password" placeholder="请输入密码">
+    </label>
+    <label for="allowed">
+        <input type="checkbox" name="allowed" checked> 授权访问我的用户信息
+    </label>
+    <input type="hidden" name="response_type" value=<%= query.response_type %>>
+    <input type="hidden" name="client_id" value=<%= query.client_id %>>
+    <input type="hidden" name="redirect_uri" value=<%= query.redirect_uri %>>
+    <input type="hidden" name="state" value=<%= query.state %>>
+    <button type="submit">授权</button>
+  </form>
+</div>
