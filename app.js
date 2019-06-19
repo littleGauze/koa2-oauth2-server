@@ -60,12 +60,12 @@ router.get('/authorize', async (ctx, next) => {
 router.post('/token', oauth.token())
 
 // token callback test
-router.get('/callback', async (ctx, next) => {
+router.get('/callback', async (ctx) => {
   ctx.body = ctx.request.query
 })
 
 const route = new Router()
-app.use(mount('/jnbapi', route.middleware()))
+app.use(mount('/api', route.middleware()))
 
 // authenticate and get the userinfo
 route.get('/user/info', oauth.authenticate(), async (ctx) => {
