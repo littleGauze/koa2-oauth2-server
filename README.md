@@ -32,6 +32,6 @@ This project is a demo for OAuth2-server package usage with grant_type of `autho
 - The OAuth 2.0 Authorization Framework [rfc6749](https://tools.ietf.org/html/rfc6749.html)
 
 ### Demo
-<img src="https://github.com/littleGauze/koa2-oauth2-server/blob/master/doc/oauth2-1.png" width="200">
-<img src="https://github.com/littleGauze/koa2-oauth2-server/blob/master/doc/oauth2-2.png" width="200">
-<img src="https://github.com/littleGauze/koa2-oauth2-server/blob/master/doc/oauth2-3.png" width="200">
+<img src="https://github.com/littleGauze/koa2-oauth2-server/blob/master/doc/oauth2-1.png" width="500">
+<img src="https://github.com/littleGauze/koa2-oauth2-server/blob/master/doc/oauth2-2.png" width="500">
+<img src="https://github.com/littleGauze/koa2-oauth2-server/blob/master/doc/oauth2-3.png" width="500">
