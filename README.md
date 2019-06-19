@@ -1,5 +1,5 @@
 # koa2-oauth2-server
-the project is a demo for OAuth2-server package usage with grant_type of `authorization_code`
+This project is a demo for OAuth2-server package usage with grant_type of `authorization_code`
 
 ## Quick Start
 - I use the mongodb for the oauth2-server model, so you should run a local mongodb server first. 
